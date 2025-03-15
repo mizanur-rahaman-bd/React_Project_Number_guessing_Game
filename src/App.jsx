@@ -1,11 +1,27 @@
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 import "./App.css";
+import LayOutOne from "./Layouts/LayOutOne";
+import Home from "./Pages/Home";
 
 function App() {
+  const myRoute = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route path="/" element={<LayOutOne />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Route>
+    )
+  );
+
   return (
     <>
-      <div className="container">
-        <h1 className="heading bg-[#000]">fdhfdh</h1>
-      </div>
+      <RouterProvider router={myRoute} />
     </>
   );
 }

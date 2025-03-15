@@ -1,5 +1,14 @@
+/* ========== Font Family Start ========== */
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap");
+
+/* ========== Font Family End ========== */
+
 @import "tailwindcss";
 
 @utility container {
   margin-inline: auto;
+}
+
+@theme {
+  --font-playwriteDK: "Playwrite DK Uloopet Guides", cursive;
 }

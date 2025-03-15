@@ -1,0 +1,20 @@
+.banner {
+  @apply relative;
+  background-image: url(Images/first_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: screen;
+}
+
+.start_button a img {
+  @apply w-[120px] h-[120px] rounded-[100px] absolute top-[20%] left-[46%];
+}
+.start_button a img:hover {
+  @apply scale-110;
+}
+.start_button a img:active {
+  @apply scale-100;
+}
+.heading_text h1 {
+  @apply text-[65px] text-[white];
+}
