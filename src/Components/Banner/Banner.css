@@ -2,8 +2,9 @@
   @apply relative;
   background-image: url(Images/first_background.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: screen;
+  background-position: center;
+  height: 100%;
+  
 }
 
 .start_button a img {
@@ -17,4 +18,6 @@
 }
 .heading_text h1 {
   @apply text-[65px] text-[white];
+  font-family: "Playwrite DK Uloopet", "cursive";
+
 }
